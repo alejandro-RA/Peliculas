@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         
-        <title>inicio</title>
+        <title>Inicio</title>
         <link rel="stylesheet"  href="./estilos.css">
 
     </head>
