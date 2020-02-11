@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Tráfico mensual</title>
+        <title>Tráfico Semanal de Peliculas Vistas</title>
  
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="http://code.highcharts.com/highcharts.js"></script>
@@ -15,24 +15,24 @@ $(function () {
                 borderWidth: 0
             },
             title: {
-                text: 'Cantidad de usuarios por motor de búsqueda de zapaterias',
+                text: 'Peliculas mas Vistas en esta Semana',
             },
             subtitle: {
-                text: 'Año 2019',
+                text: 'Enero-Junio 2020 ',
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
             },
             series: [{
-                name: 'Usuarios',
+                name: 'Visto',
                 data: [
                     {
-                        name: 'Google.com',
-                        y: 71.0,
+                        name: 'LOS VENGADORES',
+                        y: 65.0,
                         sliced: true,
                         selected: true
                     },
-                    ['index.php',       14.0],
+                    ['TITANIC',       28.0],
                     
                 ]
             }]
