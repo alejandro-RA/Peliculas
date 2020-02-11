@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         
-        <title>Inicio</title>
+        <title>3 Venidas</title>
         <link rel="stylesheet"  href="./estilos.css">
 
     </head>
