@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Tráfico mensual</title>
+ 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script type="text/javascript">
+$(function () {
+         
+        $('#pie').highcharts({
+            chart: {
+                type: 'pie',
+                borderWidth: 0
+            },
+            title: {
+                text: 'Cantidad de usuarios por motor de búsqueda de zapaterias',
+            },
+            subtitle: {
+                text: 'Año 2019',
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            series: [{
+                name: 'Usuarios',
+                data: [
+                    {
+                        name: 'Google.com',
+                        y: 71.0,
+                        sliced: true,
+                        selected: true
+                    },
+                    ['index.php',       14.0],
+                    
+                ]
+            }]
+        });
+         
+        $(document).ready(function() {
+            Highcharts.setOptions({
+                global: {
+                    useUTC: false
+                }
+            });
+         
+           
+        });
+    });
+     
+ 
+        </script>
+    </head>
+    <body>
+        
+        <!-- div que contendrá la gráfica circular -->
+        <div id="pie" style="width: 50%; height: 350px; margin: 0 auto;float:left;"></div>
+         
+        <div style="border-top:1px solid #CDCDCD;margin:10px;padding:0;clear:both;"></div>
+ 
+        
+    </body>
+</html>
